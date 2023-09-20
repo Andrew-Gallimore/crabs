@@ -1,5 +1,5 @@
 # 🦀 Crabs
-A video game built in Octave
+A simple video game built in Octave
 
 ## About
 
