@@ -1,7 +1,7 @@
 ## Author: HP <HP@ANDREWS-LAPTOP>
 ## Created: 2023-09-01
 
-% Gets, plots, and Returns the full captain
+% Gets, transforms, plots, and Returns the full captain
 % @param  xCapt     {number}
 % @param  yCapt     {number}
 % @param  thetaCapt {number}
@@ -10,10 +10,13 @@
 function captainGraphics = drawCapt(xCapt, yCapt, thetaCapt, sizeCapt)
   capt = getCapt(sizeCapt, true, false, 0);
 
-  % Get translation matrix for Captain
+  % Get & apply the rotation matrix for Captain
+  R = getRotation(thetaCapt)
+  rotatedCaptain = R*capt;
+
+  % Get & apply translation matrix for Captain
   T = getTranslation(xCapt, yCapt);
-  % Then transoforms captain to new location by multiplying with translation matrix
-  capt = T*capt;
+  capt = T*rotatedCaptain;
 
   % TODO : Rotate captain from zero heading to heading thetaCapt
 
