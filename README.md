@@ -19,7 +19,8 @@ I am creating this game as part of my STEM Professionals class in college. The g
 | getCapt | Generates captains points. | `scaleInRange()` | sizeCapt `*Number`, leftSpear, rightSpear `*Both Bool`, jab (percent) `*Number` | Captain points matrix
 | scaleInRange | Scales a value between two ranges | | value, min & max (input), min & max (output) `*All Numbers` | Scaled value
 | drawLine | Draws a line *(of a color)* between two points | | pointA, pointB `*Both Numbers`, color `*String` | Plotted line
-| getTranslation | Generates a transform matrix | | xCapt, yCapt `*All Numbers` | Transform matrix
+| getTranslation | Generates a transform matrix for captain | | xCapt, yCapt `*All Numbers` | Transform matrix
+| getRotation | Generates a rotation matrix for captain | | thetaCaptain `*number` | Rotation matrix
 
 
 > Last edited: 9/22/23
