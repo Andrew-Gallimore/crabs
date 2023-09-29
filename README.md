@@ -23,4 +23,4 @@ I am creating this game as part of my STEM Professionals class in college. The g
 | getRotation | Generates a rotation matrix for captain | | thetaCaptain `*number` | Rotation matrix
 
 
-> Last edited: 9/22/23
+> Last edited: 9/29/23
