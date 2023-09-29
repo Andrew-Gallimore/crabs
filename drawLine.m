@@ -11,7 +11,7 @@ function lineHandle = drawLine (pointA, pointB, color)
   x = [pointA(1); pointB(1)];
   y = [pointA(2); pointB(2)];
 
-  % plots and returns the plotted point
+  % plots and returns the plotted line
   lineHandle = plot(x, y, color);
   set(lineHandle, "LineWidth", 2);
 
