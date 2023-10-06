@@ -61,14 +61,14 @@ function capt = getCapt (captSize, leftSpear, rightSpear, jab)
     tSpear = [captSize * spearMult * 0.66 + jabSValue; captSize + armLength; 1];
     bSpear = [-captSize * spearMult * 0.33 + jabSValue; captSize + armLength; 1];
 
-    capt = [capt [tSpear, bSpear]]
+    capt = [capt [tSpear, bSpear]];
   endif
   if(rightSpear)
     #SPEAR
     tSpear = [captSize * spearMult * 0.66 + jabSValue; -captSize - armLength; 1];
     bSpear = [-captSize * spearMult * 0.33 + jabSValue; -captSize - armLength; 1];
 
-    capt = [capt [tSpear, bSpear]]
+    capt = [capt [tSpear, bSpear]];
   endif
 
 endfunction

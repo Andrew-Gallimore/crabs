@@ -11,7 +11,7 @@ function captainGraphics = drawCapt(xCapt, yCapt, thetaCapt, sizeCapt)
   capt = getCapt(sizeCapt, true, false, 0);
 
   % Get & apply the rotation matrix for Captain
-  R = getRotation(thetaCapt)
+  R = getRotation(thetaCapt);
   rotatedCaptain = R*capt;
 
   % Get & apply translation matrix for Captain
