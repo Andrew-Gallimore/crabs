@@ -8,14 +8,18 @@ I am creating this game as part of my STEM Professionals class in college. The g
 - Learned to import images into the game/window
 - Learned how to construct dynamic character points & lines
 - Learned to do matrix multiplation to translate & rotate the captain
+- Learned how to get inputs from keyboard
+- Implemented a game-loop to continueally draw things
+
 
 ## Functions used
 
 | Name       | Description | Calls | Arguements | Returns
 | --- | --- | --- | --- | --- |
-| crabs | Runs full game system, initializing captain & drawing captain and map. | `drawMap()` `drawCapt()` | | |
+| crabs | Runs full game system, initializing, calc'ing movements, & drawing captain and map. | `drawMap()` `moveCapt()` `drawCapt()` | | |
 | drawMap | Draws map background and sets up window for drawing on it. | | Name of bg image `*String` | Width & Hight of canvas
 | drawCapt | Gets captain points, gets and applies transformation, forms lines, then draws captain. | `getCapt()` `getRotation()` `getTranslation()` `drawLine()` | xCapt, yCapt, thetaCapt, sizeCapt `*All Numbers` | Captain Graphics Vector
+| moveCapt | Makes new position and rotation for captain based on inputs | | x, y, theta `*All numbers`, cmd `*String`, rotationDirection, rotationFactor `*Both Numbers` | New xCapt, yCapt, thetaCapt
 | getCapt | Generates captains points. | `scaleInRange()` | sizeCapt `*Number`, leftSpear, rightSpear `*Both Bool`, jab (percent) `*Number` | Captain points matrix
 | scaleInRange | Scales a value between two ranges | | value, min & max (input), min & max (output) `*All Numbers` | Scaled value
 | drawLine | Draws a line *(of a color)* between two points | | pointA, pointB `*Both Numbers`, color `*String` | Plotted line
@@ -23,4 +27,4 @@ I am creating this game as part of my STEM Professionals class in college. The g
 | getRotation | Generates a rotation matrix for captain | | thetaCaptain `*number` | Rotation matrix
 
 
-> Last edited: 9/29/23
+> Last edited: 10/09/23
